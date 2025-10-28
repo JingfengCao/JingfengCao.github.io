@@ -1,7 +1,7 @@
 ---
-title: "Holy cow!"
+title: "My Resume"
 ---
 
-### I have a webpage!
+### I have a webpage! 
 
 And I can put all kinds of stuff on it!
