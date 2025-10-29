@@ -2,6 +2,37 @@
 title: "My Resume"
 ---
 
-### I have a webpage! 
+## Jingfeng Cao
 
-And I can put all kinds of stuff on it!
+jc6693@ cumc.columbia.edu
+
+### Education
+
+#### Columbia University     
+
+New York, NY, United States     
+Master of Science in Public Health Data Science   
+Sep 2025 - present
+
+#### Tsinghua University
+
+Beijing, China    
+Bachelor of Science in Mathematica and Physics; Bachelor of Engineering in Material Science and Engineering       
+Sep 2021-Jun 2025
+
+### Professional Experience
+
+#### uBriGene Biosciences Inc
+
+Germantown, MD, United States       
+Marketing Data Analyst        
+Jul 2025 - Aug 2025       
+Focused on cleaning and enriching customer data to identify and prioritize potential clients using SQL and Python.    
+
+
+
+
+
+
+
+
