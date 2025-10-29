@@ -1,0 +1,53 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+
+library(flexdashboard)
+```
+
+
+```{r}
+data('instacart')
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+chart_a = instacart |>
+  group_by(department) |>
+  summarise(total_order = n()) |>
+  arrange(total_order) |>
+  plot_ly(x = ~department, y = ~total_order, color = ~department, type = "bar", colors = "viridis")
+chart_a
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+chart_b = instacart |>
+  
+```
+
+### Chart C
+
+```{r}
+
+```
+
