@@ -31,7 +31,8 @@ chart_a = instacart |>
   group_by(department) |>
   summarise(total_order = n()) |>
   arrange(total_order) |>
-  plot_ly(x = ~department, y = ~total_order, color = ~department, type = "bar", colors = "viridis")
+  plot_ly(x = ~department, y = ~total_order, color = ~department, type = 'bar', colors = 'viridis') |>
+  layout(title = 'Total amount of orders by departments')
 chart_a
 ```
 
@@ -42,12 +43,20 @@ Column {data-width=350}
 
 ```{r}
 chart_b = instacart |>
-  
+  group_by(aisle) |>
+  summarise(mean = mean(order_hour_of_day)) |>
+  plot_ly(x = ~aisle, y = ~mean, type = 'scatter', mode = 'lines+markers', alpha = 0.5) |>
+  layout(title = 'Mean of order hour of day by aisles')
+chart_b
 ```
 
 ### Chart C
 
 ```{r}
-
+chart_c = instacart |>
+  filter(days_since_prior_order != 30) |>
+  plot_ly(x = ~department, y = ~days_since_prior_order, type = "box", color = ~department, colors = "viridis") |>
+  layout(title = 'Days since prior order (without 30 days) by department')
+chart_c
 ```
 
